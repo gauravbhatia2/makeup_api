@@ -2,7 +2,7 @@ const makeupE1 = document.getElementById('makeup');
 getData();
 async function getData()
 {
-	const res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=lipstick');
+	const res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=lipstick&product_type=eyeliner');
 	const result = await res.json();
 	displayData(result);
 }
